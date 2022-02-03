@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a2510c-58ec-4008-9bb9-541208061676" name="Default Changelist" comment="" />
+    <list default="true" id="88a2510c-58ec-4008-9bb9-541208061676" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/valerik.php" beforeDir="false" afterPath="$PROJECT_DIR$/valerik.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="22KLpO3hbZW6ntlYdOuRXtmjG4D" />
   <component name="ProjectViewState">
@@ -35,6 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639581513482</updated>
       <workItem from="1639581515124" duration="3959000" />
+      <workItem from="1639737429121" duration="3929000" />
+      <workItem from="1639760653178" duration="1713000" />
     </task>
     <servers />
   </component>
