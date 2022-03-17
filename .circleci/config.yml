@@ -1,0 +1,52 @@
+version: 2.1
+
+orbs:
+  jira: circleci/jira@1.3.1
+workflows:
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy:
+          name: Dev East
+          requires:
+            - build-job
+      - deploy:
+          name: Test East
+          requires:
+            - Dev East
+          environment-type: testing
+      - hold:
+          type: approval
+          requires:
+            - Test East
+      - deploy:
+          name: Prod East
+          requires:
+            - hold
+          environment-type: production
+
+
+jobs:
+  build-job:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: echo 'hi jira'
+      - jira/notify
+
+  deploy:
+    parameters:
+      environment-type:
+        type: string
+        default: development
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: echo 'hi Deploy'
+      - jira/notify:
+          job_type: deployment
+          environment_type: <<parameters.environment-type>>
